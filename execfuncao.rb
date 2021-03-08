@@ -12,7 +12,7 @@ def menu
     
 end
 
-def cadastra_aluno(alunos)
+def cadastra_aluno
     aluno = {nome: "", matricula: "", notas:[]}
     puts "Informe o nome do aluno: "
     aluno[:nome] = gets.strip
@@ -57,7 +57,7 @@ end
 
 # ============ Logica  do programa ==============================================
 
-system 'clear'
+system ('clear')
 
 alunos = []
 
@@ -71,18 +71,18 @@ while controle do
     case opcao  
         
         when 1
-            cadastra_aluno(alunos)
+            cadastra_aluno
         when 2
             cadastra_nota_aluno(alunos)
         when 3
             relatorio_aluno(alunos)           
         when 4
             break
-    else
+        else
             puts "opção incorreta "
     end
     sleep 2
-    system 'clear'
+    
 end
 
    

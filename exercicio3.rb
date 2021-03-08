@@ -1,11 +1,11 @@
-puts " Escolçha uma Fruta  =>  (A) banana  (B) Maçã  (C) Laranja"
+puts " Escolha uma Fruta  =>  (A) banana  (B) Maçã  (C) Laranja"
 fruta = gets.to_s.upcase.strip
 case fruta
-    when fruta = "A"
+    when "A"
         puts " O Valor da Fruta e R$ 5,00"
-    when fruta = "B"
+    when "B"
         puts " O Valor da Fruta e R$ 5,00"
-    when fruta = "C"
+    when "C"
         puts " O Valor da Fruta e R$ 5,00"
 else
         puts "opção incorreta "
