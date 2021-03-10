@@ -73,7 +73,7 @@ def atualiza_vacina(colaboradores)
                     
                 else
                     puts "Colaborador NÃO cadastrado"
-                    break
+                    #break
                 end
             end
         end

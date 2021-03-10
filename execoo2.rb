@@ -1,30 +1,25 @@
-
+require 'byebug'
 class Bolo
-
     system 'clear'
-
-    def initialize(nome = nil)
+    
+   
+    def initialize(nome = "Bolo Madeira")
       @nome = nome
     end
-
+   
     attr_accessor :nome, :cor, :especial
-
-    
 
     def cozinhar
         puts "Assando #{self.nome}"
     end
-    
-    def cozinhar_todos(bolos)
-        puts "Assando #{self.nome}"
+
+    def self.cozinhar_todos(bolos)
+        puts "Assando #{@nome}"
     end
-    
-   
 end 
 
 Bolo.new("Bolo de morango").cozinhar
-
-Bolo.cozinhar_todos("Teste")
+puts "++++++++++++++++++++++"
 
 Bolo.cozinhar_todos([
     Bolo.new("Bolo de Chocolate"),
