@@ -14,7 +14,8 @@ class Bolo
     end
 
     def self.cozinhar_todos(bolos)
-        puts "Assando #{@nome}"
+        puts "Assando #{bolos.map(&:nome).join(", ")}"
+        puts "Assando #{bolos[0].nome}"
     end
 end 
 
