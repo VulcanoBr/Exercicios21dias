@@ -25,14 +25,9 @@ class Base
         puts "Busca por id => #{id}"
     end
 
-    
-
     def alterar_posicao
-        # posicao = 55
         puts "Alterar posicao base =>  Id : #{id}, Nome : #{nome}, Posicao : #{posicao}"
     end
-
-
 
 end
 
@@ -49,7 +44,6 @@ class Filha < Base
     end
 
     def alterar_posicao
-       # posicao = 99
         puts "Alterar posicao filha => Id : #{id}, Nome : #{nome}, Posicao : #{posicao}, Cargo : #{cargo}, Observacao : #{observacao}"
     end
 
@@ -63,12 +57,15 @@ base = Base.new
 base.id = 1
 base.nome = "Vulcano"
 base.posicao = 1
+
 base.salvar
 base.excluir
 base.posicao = 77
 base.alterar_posicao
 Base.busca_por_nome("Marcelo")
 Base.busca_por_id(66)
+
+puts "======   Filha     ================="
 
 filha = Filha.new
 filha.id = 3
